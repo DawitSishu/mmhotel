@@ -84,8 +84,8 @@ const index = () => {
               position: "absolute",
               right: "7%",
               top: "7%",
+              backgroundColor: "rgba(0, 0, 0)",
             }}
-            
           >
             <CloseIcon sx={{ color: "purple", fontSize: "2.5rem" }} />
           </IconButton>
@@ -134,13 +134,13 @@ const index = () => {
       >
         <Grid item justifyContent="center" sx={{ margin: 5 }}>
           <Typography align="center" variant="h2" className="gallery-text">
-            Get A Glimpse Of Our Exquisite Hotel
+            View Our Exquisite Hotel
           </Typography>
         </Grid>
       </Grid>
       <div style={{ padding: "20px" }}>
         <Typography align="center" variant="h3" className="gallery-text">
-          The Rooms
+          Our Rooms
         </Typography>
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
           <Masonry gutter="20px">
@@ -192,29 +192,6 @@ const index = () => {
           <Masonry gutter="20px">
             {images.map((image, i) => {
               return 16 < i && i <= 22 ? (
-                <LazyLoad offset={100} key={i}>
-                  <img
-                    key={i}
-                    src={image}
-                    style={{ width: "100%", display: "block" }}
-                    alt=""
-                    onClick={() => viewImage(image, i)}
-                    loading="lazy"
-                  />
-                </LazyLoad>
-              ) : null;
-            })}
-          </Masonry>
-        </ResponsiveMasonry>
-      </div>
-      <div style={{ padding: "20px" }}>
-        <Typography align="center" variant="h3" className="gallery-text">
-          Our Gardenary For Events
-        </Typography>
-        <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
-          <Masonry gutter="20px">
-            {images.map((image, i) => {
-              return 22 < i && i <= 28 ? (
                 <LazyLoad offset={100} key={i}>
                   <img
                     key={i}
