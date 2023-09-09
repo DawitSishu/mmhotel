@@ -1,6 +1,7 @@
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import "./App.css";
 import Navbar from "./Components/Navbar";
+import Contact from "./Components/Contact";
 const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -29,7 +30,7 @@ function App() {
   return (
     <ThemeProvider theme={lightTheme}>
       <CssBaseline />
-      <Navbar />
+      <Contact />
     </ThemeProvider>
   );
 }
