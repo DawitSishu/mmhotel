@@ -27,19 +27,18 @@ const ContactForm = () => {
     }
     try {
       const response = await emailjs.send(
-        "service_bb4huiw",
-        "template_m9uic57",
+        "",
+        "",
         {
           name: data.name,
           email: data.email,
           message: data.message,
         },
-        "YF7-rfkKbZVPRLUSx"
+        ""
       );
       alert("message uccessfully sent!");
     } catch (error) {
-      //  alert(error)
-      console.log(error);
+       alert("Error: Please try again!")
     }
   };
 
