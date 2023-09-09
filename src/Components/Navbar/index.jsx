@@ -48,9 +48,9 @@ function Navbar() {
             variant="temporary"
             anchor="left"
             sx={{
-              width: "20vw",
+              width: "250px",
               "& .MuiDrawer-paper": {
-                width: "20vw",
+                width: "250px",
                 backgroundColor: "#fff",
               },
             }}

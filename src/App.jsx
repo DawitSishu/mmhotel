@@ -5,6 +5,7 @@ import "./App.css";
 import Loader from "./Components/Loader";
 
 const Contact = React.lazy(() => import("./Components/Contact"));
+const Gallery = React.lazy(() => import("./Components/Gallery"));
 
 const lightTheme = createTheme({
   palette: {
@@ -42,6 +43,15 @@ function App() {
             element={
               <Suspense fallback={<Loader />}>
                 <Contact />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path="/gallery"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Gallery />
               </Suspense>
             }
           />
