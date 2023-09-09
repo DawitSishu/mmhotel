@@ -1,4 +1,5 @@
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Contact from "./Components/Contact";
@@ -30,7 +31,20 @@ function App() {
   return (
     <ThemeProvider theme={lightTheme}>
       <CssBaseline />
-      <Contact />
+      <BrowserRouter>
+        <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              // <Suspense fallback={<Loader />}>
+              //   {vidplaying ? <Home stop={stopVideo} /> : <Home2 />}
+              // </Suspense>
+              <Contact />
+            }
+          />
+        </Routes>
+      </BrowserRouter>
     </ThemeProvider>
   );
 }

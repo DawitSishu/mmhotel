@@ -30,7 +30,7 @@ export default function Footer() {
       <Container maxWidth="lg">
         <Grid container spacing={5}>
           <Grid item xs={12} sm={4}>
-            {/* <Link to="/about" style={{ textDecoration: "none" }}> */}
+            <Link to="/about" style={{ textDecoration: "none" }}>
             <Typography
               variant="h6"
               color="text.primary"
@@ -39,7 +39,7 @@ export default function Footer() {
             >
               About Us
             </Typography>
-            {/* </Link> */}
+            </Link>
             <Typography
               variant="body2"
               color="text.secondary"
@@ -52,7 +52,7 @@ export default function Footer() {
             </Typography>
           </Grid>
           <Grid item xs={12} sm={4}>
-            {/* <Link to="/contact" style={{ textDecoration: "none" }}> */}
+            <Link to="/contact" style={{ textDecoration: "none" }}>
             <Typography
               variant="h6"
               color="text.primary"
@@ -61,7 +61,7 @@ export default function Footer() {
             >
               Contact Us
             </Typography>
-            {/* </Link> */}
+            </Link>
             <Typography
               variant="body2"
               color="text.secondary"
@@ -74,7 +74,7 @@ export default function Footer() {
               color="text.secondary"
               sx={{ color: "#000" }}
             >
-              Email: abxc@gmail.com
+              Email: mmhoteldiredawa@gmail.com
             </Typography>
             <Typography
               variant="body2"
@@ -93,26 +93,26 @@ export default function Footer() {
             >
               Follow Us
             </Typography>
-            {/* <Link href="https://www.facebook.com/" color="inherit"> */}
+            <Link href="https://www.facebook.com/" color="inherit">
             <Facebook sx={{ color: "#000" }} />
-            {/* </Link> */}
-            {/* <Link
+            </Link>
+            <Link
               href="https://www.instagram.com/"
               color="inherit"
               sx={{ pl: 1, pr: 1 }}
-            > */}
+            >
             <Instagram sx={{ color: "#000" }} />
-            {/* </Link> */}
-            {/* <Link href="https://www.twitter.com/" color="inherit"> */}
+            </Link>
+            <Link href="https://www.twitter.com/" color="inherit">
             <Twitter sx={{ color: "#000" }} />
-            {/* </Link> */}
-            {/* <Link
+            </Link>
+            <Link
               href="https://www.tiktok.com/"
               color="inherit"
               sx={{ pl: 1, pr: 1 }}
-            > */}
+            >
             <TikTokIcon />
-            {/* </Link> */}
+            </Link>
           </Grid>
         </Grid>
         <Box mt={5}>
@@ -123,16 +123,16 @@ export default function Footer() {
             sx={{ color: "#000" }}
           >
             {"Copyright © "}
-            {/* <Link
+            <Link
               to="/"
               style={{
                 textDecoration: "none",
                 fontWeight: "bold",
                 color: "#800080",
               }}
-            > */}
+            >
             MM Hotel
-            {/* </Link>{" "} */}
+            </Link>{" "}
             {new Date().getFullYear()}
             {"."}
           </Typography>
@@ -157,9 +157,9 @@ export default function Footer() {
             >
               Dawit
             </a>
-            {" , "}
+            {/* {" , "} */}
           </Typography>
-          <Typography
+          {/* <Typography
             variant="body2"
             color="text.secondary"
             align="center"
@@ -191,7 +191,7 @@ export default function Footer() {
             >
               Efrata
             </a>
-          </Typography>
+          </Typography> */}
         </Box>
       </Container>
     </Box>
