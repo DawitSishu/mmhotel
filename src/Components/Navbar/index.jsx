@@ -37,9 +37,9 @@ function Navbar() {
               aria-label="open drawer"
               edge="start"
               onClick={showSidebar}
-              sx={{ mr: 2, fontSize: "34px !important" }}
+              sx={{ mr: 2 }}
             >
-              <MenuIcon />
+              <MenuIcon sx={{ fontSize: "44px" }} />
             </IconButton>
           </Toolbar>
         </AppBar>

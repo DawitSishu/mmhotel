@@ -11,7 +11,7 @@ const lightTheme = createTheme({
       main: "#333333",
     },
     background: {
-      default: "#fadefa",
+      default: "#ffe8ff",
     },
   },
   breakpoints: {
