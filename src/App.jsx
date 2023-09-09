@@ -1,9 +1,11 @@
+import React, { Suspense } from "react";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import Contact from "./Components/Contact";
 import Loader from "./Components/Loader";
+
+const Contact = React.lazy(() => import("./Components/Contact"));
+
 const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -32,21 +34,19 @@ function App() {
   return (
     <ThemeProvider theme={lightTheme}>
       <CssBaseline />
-      {/* <BrowserRouter>
+      <BrowserRouter>
         <Routes>
           <Route
             exact
             path="/contact"
             element={
-              // <Suspense fallback={<Loader />}>
-              //   {vidplaying ? <Home stop={stopVideo} /> : <Home2 />}
-              // </Suspense>
-              <Contact />
+              <Suspense fallback={<Loader />}>
+                <Contact />
+              </Suspense>
             }
           />
         </Routes>
-      </BrowserRouter> */}
-      <Loader />
+      </BrowserRouter>
     </ThemeProvider>
   );
 }
