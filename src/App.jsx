@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./Components/Navbar";
 import Contact from "./Components/Contact";
+import Loader from "./Components/Loader";
 const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -31,11 +32,11 @@ function App() {
   return (
     <ThemeProvider theme={lightTheme}>
       <CssBaseline />
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Routes>
           <Route
             exact
-            path="/"
+            path="/contact"
             element={
               // <Suspense fallback={<Loader />}>
               //   {vidplaying ? <Home stop={stopVideo} /> : <Home2 />}
@@ -44,7 +45,8 @@ function App() {
             }
           />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Loader />
     </ThemeProvider>
   );
 }
