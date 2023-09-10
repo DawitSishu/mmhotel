@@ -1,7 +1,7 @@
 import React from "react";
 import RoomPage from "./Room";
 import { AllRooms } from "./RoomData";
-import { Grid, Button } from "@mui/material";
+import { Grid, Button, Typography } from "@mui/material";
 import { useTheme, useMediaQuery } from "@mui/material";
 
 const RoomGrid = ({ room, roomIndex }) => {
@@ -15,7 +15,7 @@ const RoomGrid = ({ room, roomIndex }) => {
     <Grid
       container
       spacing={2}
-      alignItems="flex-start" // Align items to the top
+      alignItems="flex-start"
       direction={isImageLeft ? "row" : "row-reverse"}
       p={2}
       mb={3}
@@ -32,11 +32,16 @@ const RoomGrid = ({ room, roomIndex }) => {
         />
       </Grid>
       <Grid item xs={12} sm={6}>
-        <div>
-          <h2>{title}</h2>
-          <p>{description}</p>
-          <Button variant="contained">Load Amenities</Button>
-        </div>
+        <Grid ml={3}>
+          <Typography variant="h3" align="center">
+            {title}
+          </Typography>
+          <Typography variant="p">{description}</Typography>
+          <br />
+          <Button variant="contained" sx={{ marginTop: 4 }}>
+            Load Amenities
+          </Button>
+        </Grid>
       </Grid>
     </Grid>
   );
