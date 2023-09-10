@@ -137,62 +137,6 @@ export default function Footer() {
             {"."}
           </Typography>
         </Box>
-        <Box mt={2}>
-          <Typography
-            variant="body2"
-            color="text.secondary"
-            align="center"
-            sx={{ color: "#000" }}
-          >
-            {"Developed by - "}
-            <a
-              href="https://www.linkedin.com/in/dawit-sishu-309ab1241/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                textDecoration: "none",
-                fontWeight: "bold",
-                color: "#800080",
-              }}
-            >
-              Dawit
-            </a>
-            {/* {" , "} */}
-          </Typography>
-          {/* <Typography
-            variant="body2"
-            color="text.secondary"
-            align="center"
-            sx={{ color: "#000" }}
-          >
-            {"Photography, videography & Editing - "}
-            <a
-              href="https://www.linkedin.com/in/fares-yigeremu-39ab87271/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                textDecoration: "none",
-                fontWeight: "bold",
-                color: "#800080",
-              }}
-            >
-              Faris
-            </a>
-            {" & "}
-            <a
-              href="https://www.linkedin.com/in/efrata-tamirat-967a1624b/"
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                textDecoration: "none",
-                fontWeight: "bold",
-                color: "#800080",
-              }}
-            >
-              Efrata
-            </a>
-          </Typography> */}
-        </Box>
       </Container>
     </Box>
   );
