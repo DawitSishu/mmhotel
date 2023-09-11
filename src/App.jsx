@@ -8,6 +8,10 @@ const Contact = React.lazy(() => import("./Components/Contact"));
 const Gallery = React.lazy(() => import("./Components/Gallery"));
 const Rooms = React.lazy(() => import("./Components/Rooms"));
 const Home = React.lazy(() => import("./Components/Home"));
+const About = React.lazy(() => import("./Components/About"));
+const Honors = React.lazy(() => import("./Components/Honors"));
+const Services = React.lazy(() => import("./Components/Services"));
+
 const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -45,6 +49,33 @@ function App() {
             element={
               <Suspense fallback={<Loader />}>
                 <Home />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path="/about"
+            element={
+              <Suspense fallback={<Loader />}>
+                <About />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path="/services"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Services />
+              </Suspense>
+            }
+          />
+          <Route
+            exact
+            path="/honors"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Honors />
               </Suspense>
             }
           />

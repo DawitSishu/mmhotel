@@ -6,13 +6,14 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useTheme, useMediaQuery } from "@mui/material";
 import Navbar from "../Navbar";
 import mainImg from "../../assets/mm.jpg";
+import Footer from "../Footer";
 
 const RoomGrid = ({ room, roomIndex, open }) => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const { image, title, description, features } = room;
-  const isImageLeft = roomIndex % 2 === 0; 
+  const isImageLeft = roomIndex % 2 === 0;
 
   return (
     <Grid
@@ -134,6 +135,7 @@ const index = () => {
           <RoomPage roomData={data} />
         </Grid>
       )}
+      <Footer />
     </div>
   );
 };
