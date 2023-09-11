@@ -30,8 +30,8 @@ const RoomGrid = ({ room, roomIndex, open }) => {
           alt={title}
           style={{
             width: "100%",
-            objectFit: "cover", // Ensure the image covers the container
-            maxHeight: "100%", // Limit the image height to the container height
+            objectFit: "cover",
+            maxHeight: "100%",
           }}
         />
       </Grid>
