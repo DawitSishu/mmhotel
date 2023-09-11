@@ -6,15 +6,11 @@ export const AllRooms = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda saepe, minus obcaecati quos culpa, hic aperiam molestiae ullam laudantium corrupti sapiente? Asperiores laborum modi soluta, adipisci odio nobis ea quidem?",
     images: [lux1, lux1, lux1, lux1],
-    title: "suite",
+    title: "suite1",
     features: [
       "24 hour room service",
-      "Breakfast Services",
-      "Study Desk",
       "Multi channel television system",
       "Acces to high speed WiFi internet",
-      "luxurious Shower with Seam and bath-hub",
-      "Living Room with Comfortable Sofas",
     ],
   },
   {
@@ -22,15 +18,11 @@ export const AllRooms = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda saepe, minus obcaecati quos culpa, hic aperiam molestiae ullam laudantium corrupti sapiente? Asperiores laborum modi soluta, adipisci odio nobis ea quidem?",
     images: [lux1, lux1, lux1, lux1],
-    title: "suite",
+    title: "suite2",
     features: [
       "24 hour room service",
-      "Breakfast Services",
-      "Study Desk",
       "Multi channel television system",
       "Acces to high speed WiFi internet",
-      "luxurious Shower with Seam and bath-hub",
-      "Living Room with Comfortable Sofas",
     ],
   },
   {
@@ -38,15 +30,11 @@ export const AllRooms = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda saepe, minus obcaecati quos culpa, hic aperiam molestiae ullam laudantium corrupti sapiente? Asperiores laborum modi soluta, adipisci odio nobis ea quidem?",
     images: [lux1, lux1, lux1, lux1],
-    title: "suite",
+    title: "suite3",
     features: [
       "24 hour room service",
-      "Breakfast Services",
-      "Study Desk",
       "Multi channel television system",
       "Acces to high speed WiFi internet",
-      "luxurious Shower with Seam and bath-hub",
-      "Living Room with Comfortable Sofas",
     ],
   },
   {
@@ -54,15 +42,11 @@ export const AllRooms = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda saepe, minus obcaecati quos culpa, hic aperiam molestiae ullam laudantium corrupti sapiente? Asperiores laborum modi soluta, adipisci odio nobis ea quidem?",
     images: [lux1, lux1, lux1, lux1],
-    title: "suite",
+    title: "suite4",
     features: [
       "24 hour room service",
-      "Breakfast Services",
-      "Study Desk",
       "Multi channel television system",
       "Acces to high speed WiFi internet",
-      "luxurious Shower with Seam and bath-hub",
-      "Living Room with Comfortable Sofas",
     ],
   },
   {
@@ -70,15 +54,11 @@ export const AllRooms = [
     description:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda saepe, minus obcaecati quos culpa, hic aperiam molestiae ullam laudantium corrupti sapiente? Asperiores laborum modi soluta, adipisci odio nobis ea quidem?",
     images: [lux1, lux1, lux1, lux1],
-    title: "suite",
+    title: "suite5",
     features: [
       "24 hour room service",
-      "Breakfast Services",
-      "Study Desk",
       "Multi channel television system",
       "Acces to high speed WiFi internet",
-      "luxurious Shower with Seam and bath-hub",
-      "Living Room with Comfortable Sofas",
     ],
   },
 ];
