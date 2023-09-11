@@ -15,6 +15,7 @@ import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -68,19 +69,28 @@ function Navbar() {
               </ListItem>
               <Divider />
               {SidebarData.map((item, index) => (
-                <ListItem
+                <Link
+                  to={item.path}
+                  style={{ textDecoration: "none", color: "inherit" }}
                   key={index}
-                  onClick={showSidebar}
-                  sx={{ "&:hover": { backgroundColor: "#800080" } }}
                 >
-                  <ListItemButton alignItems="center">
-                    {item.icon}
-                    <ListItemText
-                      primary={item.title}
-                      sx={{ textAlign: "center", fontSize: "26px !important" }}
-                    />
-                  </ListItemButton>
-                </ListItem>
+                  <ListItem
+                    key={index}
+                    onClick={showSidebar}
+                    sx={{ "&:hover": { backgroundColor: "#800080" } }}
+                  >
+                    <ListItemButton alignItems="center">
+                      {item.icon}
+                      <ListItemText
+                        primary={item.title}
+                        sx={{
+                          textAlign: "center",
+                          fontSize: "26px !important",
+                        }}
+                      />
+                    </ListItemButton>
+                  </ListItem>
+                </Link>
               ))}
             </List>
           </Drawer>

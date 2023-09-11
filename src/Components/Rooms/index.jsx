@@ -12,7 +12,7 @@ const RoomGrid = ({ room, roomIndex, open }) => {
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
   const { image, title, description, features } = room;
-  const isImageLeft = roomIndex % 2 === 0; // Determines if the image is on the left side
+  const isImageLeft = roomIndex % 2 === 0; 
 
   return (
     <Grid

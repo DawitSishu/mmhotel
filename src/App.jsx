@@ -7,7 +7,7 @@ import Loader from "./Components/Loader";
 const Contact = React.lazy(() => import("./Components/Contact"));
 const Gallery = React.lazy(() => import("./Components/Gallery"));
 const Rooms = React.lazy(() => import("./Components/Rooms"));
-
+const Home = React.lazy(() => import("./Components/Home"));
 const lightTheme = createTheme({
   palette: {
     mode: "light",
@@ -39,6 +39,15 @@ function App() {
       <CssBaseline />
       <BrowserRouter>
         <Routes>
+          <Route
+            exact
+            path="/"
+            element={
+              <Suspense fallback={<Loader />}>
+                <Home />
+              </Suspense>
+            }
+          />
           <Route
             exact
             path="/contact"
