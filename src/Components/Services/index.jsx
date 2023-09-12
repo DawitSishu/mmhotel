@@ -48,9 +48,43 @@ const ServiceGrid = ({ serv, servidx }) => {
 const index = () => {
   return (
     <div>
+      <Navbar />
+      <Grid
+        container
+        alignItems="center"
+        justifyContent="center"
+        sx={{
+          position: "relative",
+          minHeight: "50vh",
+          backgroundImage: `url(${mainImg})`,
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          marginBottom: 2,
+        }}
+      >
+        <div
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+            backgroundColor: "rgba(0, 0, 0, 0.4)",
+            backdropFilter: "blur(0.5px)",
+          }}
+        ></div>
+        <Grid item justifyContent="center" zIndex={1}>
+          <Typography variant="h3" align="center" color="#fff">
+            Elevate Your Stay with Unparalleled Services at Our Luxurious
+            Retreat
+          </Typography>
+        </Grid>
+      </Grid>
       {ServiceData.map((service, index) => (
         <ServiceGrid serv={service} servidx={index} key={index} />
       ))}
+      <Footer />
     </div>
   );
 };
