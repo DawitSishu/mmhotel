@@ -142,7 +142,7 @@ const index = () => {
         <Grid container justifyContent="center" spacing={2} mb={3}>
           <Grid item xs={12}>
             <Typography variant="h3" align="center" color="primary">
-              Our Services
+              Our Facilities
             </Typography>
           </Grid>
           <Grid container justifyContent="center">
