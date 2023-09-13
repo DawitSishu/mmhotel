@@ -6,7 +6,16 @@ import { Grid, Typography, Divider, Box, Button, Paper } from "@mui/material";
 import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import "./style.css";
 import { IoIosArrowForward } from "react-icons/io";
+import { FaDumbbell, FaGlassMartini, FaHotTub, FaWifi } from "react-icons/fa";
+import { TbMassage } from "react-icons/tb";
 import { Link } from "react-router-dom";
+
+const facilities = [
+  { name: "Gym", icon: <FaDumbbell size={33} /> },
+  { name: "Massage", icon: <TbMassage size={33} /> },
+  { name: "Steam", icon: <FaHotTub size={33} /> },
+  { name: "Wifi", icon: <FaWifi size={33} /> },
+];
 
 const index = () => {
   return (
@@ -163,6 +172,20 @@ const index = () => {
               </Typography>
             </Box>
           </Grid>
+        </Grid>
+        <Grid container spacing={2} p={1} justifyContent="center">
+          {facilities.map((facility, index) => (
+            <Grid item xs={6} sm={3} key={index}>
+              <Grid container justifyContent="center">
+                {facility.icon}
+              </Grid>
+              <Typography align="center">{facility.name}</Typography>
+            </Grid>
+          ))}
+        </Grid>
+        <br />
+        <Grid container justifyContent="center">
+          <Button variant="contained">Explore More</Button>
         </Grid>
       </Box>
 
