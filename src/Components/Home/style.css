@@ -43,3 +43,10 @@
   color: #fff;
   z-index: 1;
 }
+.home-map {
+  position: relative;
+  border: 2px solid #FF00FF;
+  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.8);
+  border-radius:10px;
+  overflow: hidden;
+}

@@ -10,8 +10,6 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
-
-import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { SidebarData } from "./SidebarData";
 import { IconContext } from "react-icons";
@@ -77,7 +75,7 @@ function Navbar() {
                   <ListItem
                     key={index}
                     onClick={showSidebar}
-                    sx={{ "&:hover": { backgroundColor: "#800080" } }}
+                    sx={{ "&:hover": { backgroundColor: "#FF00FF" } }}
                   >
                     <ListItemButton alignItems="center">
                       {item.icon}

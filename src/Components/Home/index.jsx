@@ -131,9 +131,9 @@ const index = () => {
             <img src={mainImg} alt="Background" className="background-image" />
             <div className="overlay" />
             <div className="content">
-              <Typography variant="h5">Gallery</Typography>
+              <Typography variant="h5">About Us</Typography>
               <br />
-              <Link to="/gallery">
+              <Link to="/about">
                 <Button
                   variant="outlined"
                   sx={{ color: "white", borderColor: "white" }}
@@ -185,14 +185,72 @@ const index = () => {
         </Grid>
         <br />
         <Grid container justifyContent="center">
-          <Button variant="contained">Explore More</Button>
+          <Link to="/services">
+            <Button variant="contained">Explore More</Button>
+          </Link>
         </Grid>
       </Box>
-
+      <Grid container spacing={2} pl={2} pr={2} mb={4} mt={2}>
+        <Grid item xs={12}>
+          <Typography variant="h3" align="center" color="primary">
+            Refined Image Gallery
+          </Typography>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <div className="grid-item">
+            <img src={mainImg} alt="Background" className="background-image" />
+            <div className="overlay" />
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <div className="grid-item">
+            <img src={mainImg} alt="Background" className="background-image" />
+            <div className="overlay" />
+          </div>
+        </Grid>
+        <Grid item xs={12} sm={4}>
+          <div className="grid-item">
+            <img src={mainImg} alt="Background" className="background-image" />
+            <div className="overlay" />
+          </div>
+        </Grid>
+        <Grid container justifyContent="center" mt={1}>
+          <Link to="/services">
+            <Button variant="contained">Explore More</Button>
+          </Link>
+        </Grid>
+      </Grid>
+      <Grid container spacing={2} pl={2} pr={2} mb={4} mt={2}>
+        <Grid item xs={12}>
+          <Typography variant="h3" align="center" color="primary">
+            We Invite You to Experience Our World-Class Amenities
+          </Typography>
+          <Box
+            sx={{
+              width: "100%",
+              height: "100%",
+              
+            }}
+            className="home-map"
+            mt={1}
+            mb={2}
+          >
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3933.9126859459475!2d41.83915507502611!3d9.602786690483283!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x163101f83c817839%3A0x3e452620dfe8cb5d!2sMM%20Hotel!5e0!3m2!1sen!2set!4v1694253331182!5m2!1sen!2set"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </Box>
+        </Grid>
+      </Grid>
       <br />
       <br />
       <br />
-      <div></div>
+      <Footer />
     </div>
   );
 };
