@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Navbar from "../Navbar";
 import mainImg from "../../assets/mm.jpg";
 import Footer from "../Footer";
-import { Grid, Typography, Divider, Box, Button, Paper } from "@mui/material";
+import { Grid, Typography, Divider, Box, Button } from "@mui/material";
 import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import "./style.css";
 import { IoIosArrowForward } from "react-icons/io";
@@ -229,7 +229,6 @@ const index = () => {
             sx={{
               width: "100%",
               height: "100%",
-              
             }}
             className="home-map"
             mt={1}

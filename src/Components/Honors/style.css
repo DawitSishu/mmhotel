@@ -1,0 +1,11 @@
+.mobile-image {
+  max-width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .mobile-image {
+    max-width: 100%;
+  }
+}
