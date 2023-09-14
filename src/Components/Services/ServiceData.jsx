@@ -1,10 +1,11 @@
 import img from "../../assets/mm.jpg";
+import bar from "../../assets/pics/bar.JPG";
 
 export const ServiceData = [
   {
     title: "Bar",
     text: "Step into our vibrant bar and experience a world of taste and indulgence. Our skilled mixologists are dedicated to crafting unique and tantalizing cocktails that will awaken your senses. From classic favorites to innovative creations, our extensive drink menu offers something for everyone. Immerse yourself in the lively ambiance, relax with friends, and let our friendly staff cater to your every need. Whether you're looking for a casual after-work drink or a night out on the town, our bar is the perfect destination for a memorable experience.",
-    imgUrl: img,
+    imgUrl: bar,
   },
   {
     title: "Restaurant",
