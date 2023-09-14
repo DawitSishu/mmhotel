@@ -75,7 +75,7 @@ function Navbar() {
                   <ListItem
                     key={index}
                     onClick={showSidebar}
-                    sx={{ "&:hover": { backgroundColor: "#FF00FF" } }}
+                    sx={{ "&:hover": { backgroundColor: "#800080" } }}
                   >
                     <ListItemButton alignItems="center">
                       {item.icon}

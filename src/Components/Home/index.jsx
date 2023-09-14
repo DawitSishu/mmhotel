@@ -9,6 +9,7 @@ import { IoIosArrowForward } from "react-icons/io";
 import { FaDumbbell, FaGlassMartini, FaHotTub, FaWifi } from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 import { Link } from "react-router-dom";
+import logo from "../../assets/logo.png";
 
 const facilities = [
   { name: "Gym", icon: <FaDumbbell size={33} /> },
@@ -48,13 +49,20 @@ const index = () => {
             backdropFilter: "blur(0.5px)",
           }}
         ></div>
-        <Grid item justifyContent="center" zIndex={1}>
-          <Typography variant="h1" align="center" sx={{ color: "white" }}>
-            MM Hotel
-          </Typography>
+        <Grid
+          item
+          justifyContent="center"
+          zIndex={1}
+          sx={{ textAlign: "center" }}
+        >
+          <img
+            src={logo}
+            style={{ width: "100%", maxWidth: "300px" }}
+            alt="Logo"
+          />
           <Typography variant="h3" align="center" sx={{ color: "white" }}>
-            Your <FaMapMarkerAlt color="#FF00FF" /> Gateway to{" "}
-            <FaMapMarkerAlt color="#FF00FF" /> Dire Dawa
+            Your <FaMapMarkerAlt color="#800080" /> Gateway to{" "}
+            <FaMapMarkerAlt color="#800080" /> Dire Dawa
           </Typography>
         </Grid>
       </Grid>
@@ -68,12 +76,12 @@ const index = () => {
           WELCOME
         </Typography>
         <Typography variant="body2" align="center">
-          <FaStar color="#FF00FF" /> Nestled in the heart of the city's vibrant
+          <FaStar color="#800080" /> Nestled in the heart of the city's vibrant
           pulse, MM Hotel offers a prime location just moments away from the
           bustling bus station. Immerse yourself in the dynamic energy of Dire
           Dawa as you embark on effortless journeys to iconic landmarks,
           cultural hotspots, and hidden gems, all conveniently accessible from
-          our doorstep. <FaStar color="#FF00FF" />
+          our doorstep. <FaStar color="#800080" />
         </Typography>
         <Divider
           sx={{
@@ -81,7 +89,7 @@ const index = () => {
             width: "30%",
             height: "2px",
             margin: "20px auto",
-            backgroundColor: "#FF00FF",
+            backgroundColor: "#800080",
           }}
         />
       </Grid>
@@ -186,7 +194,7 @@ const index = () => {
         <br />
         <Grid container justifyContent="center">
           <Link to="/services">
-            <Button variant="contained">Explore More</Button>
+            <Button variant="contained">Load More</Button>
           </Link>
         </Grid>
       </Box>
@@ -215,8 +223,8 @@ const index = () => {
           </div>
         </Grid>
         <Grid container justifyContent="center" mt={1}>
-          <Link to="/services">
-            <Button variant="contained">Explore More</Button>
+          <Link to="/gallery">
+            <Button variant="contained">Load More</Button>
           </Link>
         </Grid>
       </Grid>
