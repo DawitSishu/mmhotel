@@ -10,45 +10,62 @@ import Navbar from "../Navbar";
 import Footer from "../Footer";
 import LazyLoad from "react-lazyload";
 import img from "../../assets/mm.jpg";
+import r0 from "../../assets/pics/p1.jpg";
+import r1 from "../../assets/pics/sute1.jpg";
+import r2 from "../../assets/pics/dx1.jpg";
+import r3 from "../../assets/pics/s1.jpg";
+import r4 from "../../assets/pics/tw1.jpg";
+import r5 from "../../assets/pics/p2.jpg";
+import r6 from "../../assets/pics/sute4.jpg";
+import r7 from "../../assets/pics/dx4.jpg";
+import r8 from "../../assets/pics/p5.jpg";
+import r9 from "../../assets/pics/rest.jpg";
+import r10 from "../../assets/pics/bar.jpg";
+import r11 from "../../assets/pics/eb1.jpg";
+import r12 from "../../assets/pics/eb2.jpg";
+import r13 from "../../assets/pics/eb3.jpg";
+import r14 from "../../assets/pics/eb4.jpg";
+import r15 from "../../assets/pics/eb5.jpg";
+import r16 from "../../assets/pics/eb6.jpg";
+import r17 from "../../assets/pics/eb7.jpg";
+import r18 from "../../assets/pics/teras.jpg";
+import r19 from "../../assets/pics/st1.jpg";
+import r20 from "../../assets/pics/st2.jpg";
+import r21 from "../../assets/pics/st3.jpg";
+import r22 from "../../assets/pics/st8.jpg";
+import r23 from "../../assets/pics/st4.jpg";
+import r24 from "../../assets/pics/st5.jpg";
+import r25 from "../../assets/pics/st6.jpg";
+import r26 from "../../assets/pics/st7.jpg";
 
 const images = [
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
+  r0,
+  r1,
+  r2,
+  r3,
+  r4,
+  r5,
+  r6,
+  r7,
+  r8,
+  r9,
+  r10,
+  r11,
+  r12,
+  r13,
+  r14,
+  r15,
+  r16,
+  r17,
+  r18,
+  r19,
+  r20,
+  r21,
+  r22,
+  r23,
+  r24,
+  r25,
+  r26,
 ];
 
 const index = () => {
@@ -145,7 +162,7 @@ const index = () => {
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
           <Masonry gutter="20px">
             {images.map((image, i) => {
-              return i <= 5 ? (
+              return i <= 8 ? (
                 <LazyLoad offset={100} key={i}>
                   <img
                     key={i}
@@ -163,12 +180,12 @@ const index = () => {
       </div>
       <div style={{ padding: "20px" }}>
         <Typography align="center" variant="h3">
-          Restaurant and Reception
+          Restaurant and Bar
         </Typography>
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
           <Masonry gutter="20px">
             {images.map((image, i) => {
-              return 10 < i && i <= 16 ? (
+              return 8 < i && i <= 17 ? (
                 <LazyLoad offset={100} key={i}>
                   <img
                     key={i}
@@ -191,7 +208,7 @@ const index = () => {
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
           <Masonry gutter="20px">
             {images.map((image, i) => {
-              return 16 < i && i <= 22 ? (
+              return 17 < i && i <= 26 ? (
                 <LazyLoad offset={100} key={i}>
                   <img
                     key={i}

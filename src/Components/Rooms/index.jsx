@@ -1,11 +1,11 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import RoomPage from "./Room";
 import { AllRooms } from "./RoomData";
 import { Grid, Button, Typography, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { useTheme, useMediaQuery } from "@mui/material";
 import Navbar from "../Navbar";
-import mainImg from "../../assets/mm.jpg";
+import mainImg from "../../assets/pics/p6.jpg";
 import Footer from "../Footer";
 
 const RoomGrid = ({ room, roomIndex, open }) => {
@@ -56,6 +56,9 @@ const RoomGrid = ({ room, roomIndex, open }) => {
 };
 const index = () => {
   const [data, setdata] = useState(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleOpen = (roomdt) => {
     setdata(roomdt);
@@ -76,7 +79,7 @@ const index = () => {
             justifyContent="center"
             sx={{
               position: "relative",
-              minHeight: "50vh",
+              minHeight: "40vh",
               backgroundImage: `url(${mainImg})`,
               backgroundRepeat: "no-repeat",
               backgroundSize: "cover",
@@ -96,9 +99,9 @@ const index = () => {
               }}
             ></div>
             <Grid item justifyContent="center" zIndex={1}>
-              <Typography variant="h3" align="center" color="#fff">
-                Experience the perfect retreat for your getaway, where comfort,
-                style, and impeccable service await in our exquisite rooms.
+              <Typography variant="h4" align="center" color="#0e1114">
+                Experience the perfect retreat for your getaway, where
+                impeccable service await in our exquisite rooms.
               </Typography>
             </Grid>
           </Grid>
@@ -127,10 +130,10 @@ const index = () => {
               position: "absolute",
               right: "7%",
               top: "7%",
-              backgroundColor: "#ffe8ff",
+              backgroundColor: "#394757",
             }}
           >
-            <CloseIcon sx={{ color: "purple", fontSize: "2.5rem" }} />
+            <CloseIcon sx={{ color: "#FFEE49", fontSize: "2.5rem" }} />
           </IconButton>
           <RoomPage roomData={data} />
         </Grid>

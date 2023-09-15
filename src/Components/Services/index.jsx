@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ServiceData } from "./ServiceData";
 import { Grid, Typography } from "@mui/material";
 import { useTheme, useMediaQuery } from "@mui/material";
@@ -7,6 +7,9 @@ import mainImg from "../../assets/pics/serv.jpg";
 import Footer from "../Footer";
 
 const ServiceGrid = ({ serv, servidx }) => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("md"));
 
