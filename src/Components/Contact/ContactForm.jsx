@@ -38,7 +38,7 @@ const ContactForm = () => {
       );
       alert("message uccessfully sent!");
     } catch (error) {
-       alert("Error: Please try again!")
+      alert("Error: Please try again!");
     }
   };
 
@@ -53,12 +53,6 @@ const ContactForm = () => {
       }}
     >
       <Grid container>
-        <Grid item xs={12}>
-          <Typography variant="h5" mb={1}></Typography>
-          <strong>
-            <Typography variant="h3" mb={5}></Typography>
-          </strong>
-        </Grid>
         <Grid item xs={12}>
           <InputLabel htmlFor="Name">
             <Typography

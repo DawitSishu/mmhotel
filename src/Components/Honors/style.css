@@ -1,11 +1,12 @@
-.mobile-image {
-  max-width: 80%;
-  display: block;
-  margin: 0 auto;
+.honor-displayer {
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  backdrop-filter: blur(25px);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
 
-@media (max-width: 768px) {
-  .mobile-image {
-    max-width: 100%;
-  }
-}

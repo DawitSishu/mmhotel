@@ -3,7 +3,7 @@ import { ServiceData } from "./ServiceData";
 import { Grid, Typography } from "@mui/material";
 import { useTheme, useMediaQuery } from "@mui/material";
 import Navbar from "../Navbar";
-import mainImg from "../../assets/mm.jpg";
+import mainImg from "../../assets/pics/serv.jpg";
 import Footer from "../Footer";
 
 const ServiceGrid = ({ serv, servidx }) => {

@@ -132,14 +132,14 @@ const index = () => {
         alignItems="center"
         justifyContent="center"
       >
-        <Grid item justifyContent="center" sx={{ margin: 5 }}>
-          <Typography align="center" variant="h2" className="gallery-text">
+        <Grid item justifyContent="center" sx={{ marginTop: 5 }}>
+          <Typography align="center" variant="h2" color="primary">
             Journey through Elegance: Discover Our Hotel's Captivating Gallery
           </Typography>
         </Grid>
       </Grid>
       <div style={{ padding: "20px" }}>
-        <Typography align="center" variant="h3" className="gallery-text">
+        <Typography align="center" variant="h3">
           Our Rooms
         </Typography>
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
@@ -162,7 +162,7 @@ const index = () => {
         </ResponsiveMasonry>
       </div>
       <div style={{ padding: "20px" }}>
-        <Typography align="center" variant="h3" className="gallery-text">
+        <Typography align="center" variant="h3">
           Restaurant and Reception
         </Typography>
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>
@@ -185,7 +185,7 @@ const index = () => {
         </ResponsiveMasonry>
       </div>
       <div style={{ padding: "20px" }}>
-        <Typography align="center" variant="h3" className="gallery-text">
+        <Typography align="center" variant="h3">
           Some Other Places
         </Typography>
         <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 750: 2, 900: 3 }}>

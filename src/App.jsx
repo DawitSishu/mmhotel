@@ -16,14 +16,20 @@ const lightTheme = createTheme({
   palette: {
     mode: "light",
     primary: {
-      main: "#800080",
-      // main: "#FF00FF",
+      // main: "#FFD700",
+      // main: "#f3e9f7",
+      main: "#FFEE49",
     },
     secondary: {
-      main: "#333333",
+      main: "#800080",
     },
     background: {
-      default: "#ffe8ff",
+      // default: "#ffe8ff",
+      // default: "#bf3af0",
+      default: "#394757",
+    },
+    text: {
+      primary: '#ffffff', // Set the default text color to white
     },
   },
   breakpoints: {

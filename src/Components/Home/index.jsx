@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "../Navbar";
-import mainImg from "../../assets/mm.jpg";
+import mainImg from "../../assets/pics/main.jpg";
 import Footer from "../Footer";
 import { Grid, Typography, Divider, Box, Button } from "@mui/material";
 import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
@@ -30,41 +30,49 @@ const index = () => {
         justifyContent="center"
         sx={{
           position: "relative",
-          minHeight: "100vh",
+          minHeight: "20vh", // Decrease the height to half (50% of viewport height)
           backgroundImage: `url(${mainImg})`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
-          marginBottom: 5,
         }}
       >
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "rgba(0, 0, 0, 0.4)",
-            backdropFilter: "blur(0.5px)",
-          }}
-        ></div>
         <Grid
           item
           justifyContent="center"
           zIndex={1}
-          sx={{ textAlign: "center" }}
+          sx={{ textAlign: "center" }} // Add padding to center content
         >
           <img
             src={logo}
-            style={{ width: "100%", maxWidth: "300px" }}
+            style={{ width: "70%", maxWidth: "200px" }}
             alt="Logo"
           />
+          <Typography
+            variant="h2"
+            align="center"
+            sx={{ color: "#FF00FF", fontWeight: "bold" }}
+          >
+            MM Hotel
+          </Typography>
           <Typography variant="h3" align="center" sx={{ color: "white" }}>
-            Your <FaMapMarkerAlt color="#800080" /> Gateway to{" "}
-            <FaMapMarkerAlt color="#800080" /> Dire Dawa
+            Your <FaMapMarkerAlt color="#FF00FF" /> Gateway to{" "}
+            <FaMapMarkerAlt color="#FF00FF" /> Dire Dawa
           </Typography>
         </Grid>
+        <svg
+          version="1.0"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="xMidYMid meet"
+          viewBox="3 0.5 598.5 39.41"
+          style={{ transform: 'rotate(180deg)' }}
+        >
+          {" "}
+          <g fill="#354755FF" stroke="#354755FF">
+            {" "}
+            <path d="M 15.500 6.942 C 22.100 10.127 27.838 12.542 28.250 12.308 C 28.663 12.073 29.000 12.306 29.000 12.824 C 29.000 13.343 29.788 14.006 30.750 14.297 C 31.713 14.589 37.788 17.072 44.250 19.815 C 50.713 22.558 56.000 24.567 56.000 24.279 C 56.000 23.991 56.563 24.201 57.250 24.745 C 58.550 25.775 68.751 29.447 70.500 29.514 C 71.050 29.535 71.950 29.830 72.500 30.169 C 74.247 31.246 87.211 34.816 95.500 36.503 C 108.401 39.129 113.419 39.506 134.000 39.396 C 149.992 39.311 155.378 38.896 163.938 37.089 C 169.679 35.877 174.835 34.602 175.396 34.255 C 175.957 33.909 177.334 33.522 178.458 33.396 C 179.581 33.270 181.625 32.733 183.000 32.203 C 184.375 31.673 185.725 31.213 186.000 31.180 C 187.114 31.046 209.307 22.927 210.363 22.268 C 210.988 21.876 211.955 21.487 212.511 21.402 C 213.067 21.317 217.865 19.856 223.173 18.155 C 240.120 12.727 246.573 11.566 260.000 11.532 C 276.952 11.489 280.479 12.031 304.000 18.301 C 311.425 20.281 318.625 22.107 320.000 22.361 C 321.375 22.614 323.175 23.065 324.000 23.363 C 325.973 24.076 330.452 24.887 342.000 26.620 C 353.572 28.357 369.192 27.590 386.000 24.458 C 387.375 24.202 389.625 23.830 391.000 23.631 C 398.351 22.570 407.453 20.838 408.245 20.349 C 408.741 20.042 410.352 19.682 411.824 19.550 C 413.296 19.418 419.675 18.564 426.000 17.652 C 445.229 14.880 452.704 14.474 472.656 15.121 C 491.485 15.730 498.556 16.302 532.500 19.962 C 541.850 20.969 550.175 21.815 551.000 21.840 C 551.825 21.866 560.825 23.048 571.000 24.468 C 581.175 25.888 592.088 27.235 595.250 27.461 L 601.000 27.872 601.000 14.436 L 601.000 1.000 302.250 1.075 L 3.500 1.150 15.500 6.942 "></path>
+          </g>{" "}
+        </svg>
       </Grid>
       <Grid pl={10} pr={10} pb={3}>
         <Typography
@@ -76,12 +84,12 @@ const index = () => {
           WELCOME
         </Typography>
         <Typography variant="body2" align="center">
-          <FaStar color="#800080" /> Nestled in the heart of the city's vibrant
+          <FaStar color="#FFEE49" /> Nestled in the heart of the city's vibrant
           pulse, MM Hotel offers a prime location just moments away from the
           bustling bus station. Immerse yourself in the dynamic energy of Dire
           Dawa as you embark on effortless journeys to iconic landmarks,
           cultural hotspots, and hidden gems, all conveniently accessible from
-          our doorstep. <FaStar color="#800080" />
+          our doorstep. <FaStar color="#FFEE49" />
         </Typography>
         <Divider
           sx={{
@@ -89,7 +97,7 @@ const index = () => {
             width: "30%",
             height: "2px",
             margin: "20px auto",
-            backgroundColor: "#800080",
+            backgroundColor: "#FFEE49",
           }}
         />
       </Grid>

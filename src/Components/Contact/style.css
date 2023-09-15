@@ -15,8 +15,16 @@
 }
 .contact-box {
   position: relative;
-  border: 3px solid #ff00ff;
-  box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.8);
+  border: 3px solid gold;
+  box-shadow: 4px 4px 16px rgba(255, 255, 255, 0.8);
   border-radius: 10px;
   overflow: hidden;
+}
+.contact-item {
+  display: flex;
+  align-content: center;
+  align-items: baseline;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
 }

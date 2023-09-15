@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Grid from "@mui/material/Grid";
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import { Box } from "@mui/material";
-const TikTokIcon = ({ color = "black" }) => {
+const TikTokIcon = ({ color = "white" }) => {
   return (
     <svg
       fill={color}
@@ -23,7 +23,8 @@ export default function Footer() {
     <Box
       component="footer"
       sx={{
-        backgroundColor: "#e6b3d4",
+        backgroundColor: "#FF00FF",
+        // backgroundColor: "#e6b3d4",
         p: 6,
       }}
     >
@@ -35,7 +36,7 @@ export default function Footer() {
               variant="h6"
               color="text.primary"
               gutterBottom
-              sx={{ color: "#000", fontWeight: "bold" }}
+              sx={{ color: "#fff", fontWeight: "bold" }}
             >
               About Us
             </Typography>
@@ -43,7 +44,7 @@ export default function Footer() {
             <Typography
               variant="body2"
               color="text.secondary"
-              sx={{ color: "#000" }}
+              sx={{ color: "#fff" }}
             >
               Our hotel is committed to offering a premium and customized
               experience for our guests. We try to surpass expectations and make
@@ -57,7 +58,7 @@ export default function Footer() {
               variant="h6"
               color="text.primary"
               gutterBottom
-              sx={{ color: "#000", fontWeight: "bold" }}
+              sx={{ color: "#fff", fontWeight: "bold" }}
             >
               Contact Us
             </Typography>
@@ -65,21 +66,21 @@ export default function Footer() {
             <Typography
               variant="body2"
               color="text.secondary"
-              sx={{ color: "#000" }}
+              sx={{ color: "#fff" }}
             >
               JR3R+4M9, Dire Dawa, Ethiopia
             </Typography>
             <Typography
               variant="body2"
               color="text.secondary"
-              sx={{ color: "#000" }}
+              sx={{ color: "#fff" }}
             >
               Email: mmhoteldiredawa@gmail.com
             </Typography>
             <Typography
               variant="body2"
               color="text.secondary"
-              sx={{ color: "#000" }}
+              sx={{ color: "#fff" }}
             >
               Phone: 025-411-44-44
             </Typography>
@@ -89,22 +90,22 @@ export default function Footer() {
               variant="h6"
               color="text.primary"
               gutterBottom
-              sx={{ color: "#000", fontWeight: "bold" }}
+              sx={{ color: "#fff", fontWeight: "bold" }}
             >
               Follow Us
             </Typography>
             <Link href="https://www.facebook.com/" color="inherit">
-            <Facebook sx={{ color: "#000" }} />
+            <Facebook sx={{ color: "#fff" }} />
             </Link>
             <Link
               href="https://www.instagram.com/"
               color="inherit"
               sx={{ pl: 1, pr: 1 }}
             >
-            <Instagram sx={{ color: "#000" }} />
+            <Instagram sx={{ color: "#fff" }} />
             </Link>
             <Link href="https://www.twitter.com/" color="inherit">
-            <Twitter sx={{ color: "#000" }} />
+            <Twitter sx={{ color: "#fff" }} />
             </Link>
             <Link
               href="https://www.tiktok.com/"
@@ -120,7 +121,7 @@ export default function Footer() {
             variant="body2"
             color="text.secondary"
             align="center"
-            sx={{ color: "#000" }}
+            sx={{ color: "#fff" }}
           >
             {"Copyright © "}
             <Link
@@ -128,7 +129,7 @@ export default function Footer() {
               style={{
                 textDecoration: "none",
                 fontWeight: "bold",
-                color: "#800080",
+                color: "#FFEE49",
               }}
             >
             MM Hotel

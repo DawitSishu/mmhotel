@@ -50,7 +50,7 @@ function Navbar() {
               width: "250px",
               "& .MuiDrawer-paper": {
                 width: "250px",
-                backgroundColor: "#fff",
+                backgroundColor: "#394757",
               },
             }}
             open={sidebar}
@@ -59,7 +59,7 @@ function Navbar() {
             <List>
               <ListItem>
                 <IconButton onClick={showSidebar}>
-                  <AiIcons.AiOutlineClose color="primary" />
+                  <AiIcons.AiOutlineClose color="#FFEE49" />
                 </IconButton>
                 <Typography variant="h6" align="center" color="primary" ml={3}>
                   MM Hotel
@@ -75,7 +75,7 @@ function Navbar() {
                   <ListItem
                     key={index}
                     onClick={showSidebar}
-                    sx={{ "&:hover": { backgroundColor: "#800080" } }}
+                    sx={{ "&:hover": { backgroundColor: "#bf3af0" } }}
                   >
                     <ListItemButton alignItems="center">
                       {item.icon}

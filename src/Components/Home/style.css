@@ -45,8 +45,55 @@
 }
 .home-map {
   position: relative;
-  border: 2px solid #FF00FF;
+  border: 2px solid #ff00ff;
   box-shadow: 4px 4px 16px rgba(0, 0, 0, 0.8);
-  border-radius:10px;
+  border-radius: 10px;
   overflow: hidden;
+}
+
+.text {
+  color: #954eeb;
+  position: relative;
+  top: 40vh;
+  text-align: center;
+  font-family: "Roboto Slab", arial;
+}
+
+.separator {
+  position: relative;
+  height: 40vh;
+  background-color: #d2b6ff; /* Color for the top section */
+  z-index: 1;
+}
+
+.separator::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100px; /* Adjust the curve height as needed */
+  background-color: transparent;
+  border-radius: 50%;
+  background-color: #d2b6ff; /* Color for the curve */
+}
+
+.wave-front {
+  animation: drift 13s infinite cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #d2b6ff; /* Color for the bottom section */
+  opacity: 1;
+  position: relative;
+  top: 40vh; /* Align with the separator */
+}
+
+/* Your other wave styles remain unchanged */
+
+@keyframes drift {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
