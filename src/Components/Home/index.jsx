@@ -3,9 +3,9 @@ import Navbar from "../Navbar";
 import mainImg from "../../assets/pics/main.jpg";
 import about from "../../assets/pics/about2.jpg";
 import room from "../../assets/pics/p1.jpg";
-import g1  from "../../assets/pics/bar.jpg";
-import g2  from "../../assets/pics/mor.jpg";
-import g3  from "../../assets/pics/p3.jpg";
+import g1 from "../../assets/pics/bar.jpg";
+import g2 from "../../assets/pics/mor.jpg";
+import g3 from "../../assets/pics/p3.jpg";
 import Footer from "../Footer";
 import { Grid, Typography, Divider, Box, Button } from "@mui/material";
 import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
@@ -15,6 +15,16 @@ import { FaDumbbell, FaGlassMartini, FaHotTub, FaWifi } from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import ts from "../../assets/pics/ts.png";
+import ts2 from "../../assets/pics/ts2.png";
+import ts3 from "../../assets/pics/ts3.jpg";
+import ts4 from "../../assets/pics/ts4.png";
+import ts5 from "../../assets/pics/ts5.png";
+import ts6 from "../../assets/pics/ts6.jpeg";
+import ts7 from "../../assets/pics/ts7.jpg";
+
+const clients = [ts, ts2, ts3, ts4, ts5, ts6, ts7];
 
 const facilities = [
   { name: "Gym", icon: <FaDumbbell size={33} /> },
@@ -244,7 +254,58 @@ const index = () => {
           </Link>
         </Grid>
       </Grid>
-      <Grid container spacing={2} pl={2} pr={2}  mt={2}>
+      <Box>
+        <Grid container justifyContent="center" spacing={2} mb={3}>
+          <Grid item xs={12}>
+            <Typography variant="h3" align="center" color="primary">
+              Trusted Partnerships
+            </Typography>
+          </Grid>
+          <Grid container justifyContent="center">
+            <Box
+              sx={{
+                width: "60%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Typography variant="body2" align="center">
+                Experience the power of long-lasting client relationships. Our
+                portfolio showcases a diverse range of esteemed partners, both
+                past and present. From successful collaborations to enduring
+                connections, we have nurtured fruitful alliances that have
+                fueled growth and success. Explore our grid of trusted logos,
+                symbolizing the enduring relationships we've built with our
+                valued clients.
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+      </Box>
+      <ResponsiveMasonry
+        columnsCountBreakPoints={{ 350: 1, 750: 4, 900: 7 }}
+        style={{ backgroundColor: "white" }}
+      >
+        <Masonry gutter="20px">
+          {clients.map((image, i) => {
+            return (
+              <img
+                key={i}
+                src={image}
+                style={{
+                  width: "100%",
+                  display: "block",
+                  cursor: "pointer",
+                }}
+                alt=""
+                loading="lazy"
+              />
+            );
+          })}
+        </Masonry>
+      </ResponsiveMasonry>
+      <Grid container spacing={2} pl={2} pr={2} mt={2}>
         <Grid item xs={12}>
           <Typography variant="h3" align="center" color="primary">
             We Invite You to Experience Our World-Class Amenities

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Typography,
@@ -7,10 +7,12 @@ import {
   InputLabel,
   Button,
 } from "@mui/material";
+import Spinner from "../Spinner/Spinner.jsx";
 import { AiOutlineSend } from "react-icons/ai";
 import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import { createTheme, ThemeProvider, CssBaseline } from "@mui/material";
+import { SetMealOutlined } from "@mui/icons-material";
 
 const ContactForm = () => {
   const {
@@ -18,7 +20,7 @@ const ContactForm = () => {
     handleSubmit,
     formState: { errors },
   } = useForm();
-
+  const [sending, setSending] = useState(false);
   const handleUserData = async (data) => {
     const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailPattern.test(data.email)) {
@@ -26,23 +28,35 @@ const ContactForm = () => {
       return;
     }
     try {
+      setSending(true);
       const response = await emailjs.send(
-        "",
-        "",
+        "service_qju62yp",
+        "template_frunu68",
         {
           name: data.name,
           email: data.email,
           message: data.message,
         },
-        ""
+        "oxfP1ZhG4Hdv454-U"
       );
-      alert("message uccessfully sent!");
+      alert("message successfully sent!");
     } catch (error) {
       alert("Error: Please try again!");
     }
+    setSending(false);
   };
 
-  return (
+  return sending ? (
+    <div
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Spinner />
+    </div>
+  ) : (
     <Box
       component="form"
       onSubmit={handleSubmit(handleUserData)}

@@ -1,12 +1,19 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import RoomPage from "./Room";
 import { AllRooms } from "./RoomData";
-import { Grid, Button, Typography, IconButton } from "@mui/material";
+import { Grid, Button, Typography, IconButton, Box } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import { useTheme, useMediaQuery } from "@mui/material";
 import Navbar from "../Navbar";
 import mainImg from "../../assets/pics/p6.jpg";
 import Footer from "../Footer";
+import {
+  AccessTime,
+  FlightTakeoff,
+  Hotel,
+  LocalShipping,
+  RoomService,
+} from "@mui/icons-material";
 
 const RoomGrid = ({ room, roomIndex, open }) => {
   const theme = useTheme();
@@ -72,7 +79,7 @@ const index = () => {
     <div style={{ overflow: "hidden" }}>
       <Navbar />
       {!data ? (
-        <Grid>
+        <>
           <Grid
             container
             alignItems="center"
@@ -105,6 +112,58 @@ const index = () => {
               </Typography>
             </Grid>
           </Grid>
+          <Typography padding={3} align="center">
+            At MM Hotel, we have 60 guest rooms and that range from the
+            luxurious Suits to the fashionable style and comfort in deluxe
+            bedrooms, many with magnificent views of the Dire Dawa Mountains. MM
+            Hotel Dire Dawa is located in Sabian, short distance from the
+            airport, presents you with ideal location. Guests can enjoy the
+            on-site bar, and meals at the on-site restaurant. Free private
+            parking is available on site. MM Hotel features free Wi-Fi
+            throughout the property. Guest rooms at MM Hotel is air-conditioned
+            and equipped with a flat-screen TV with satellite channels,
+            tea-making facilities and Jacuzzi, available in Suit rooms. Each one
+            comes with a private bathroom fitted with bath and shower, and also
+            including bath robes and slippers. MM Hotel Dire Dawa offers a free
+            shuttle service from the airport, a 24-hour front desk and meeting
+            facilities. There is also a shared lounge where guests can relax and
+            watch TV.
+          </Typography>
+          <Grid container justifyContent="center" sx={{ pl: 5, pr: 5 }}>
+            <Grid xs={12} sm={6}>
+              <Typography variant="h6">
+                <AccessTime /> Check-in:
+              </Typography>
+              <Typography>
+                <FlightTakeoff /> Guaranteed check-in from 1:00 p.m.
+              </Typography>
+              <Typography>
+                <FlightTakeoff /> If the room is ready earlier, early check-in
+                is allowed.
+              </Typography>
+              <Typography>
+                <LocalShipping /> If the room is not ready, complimentary
+                luggage storage is available.
+              </Typography>
+            </Grid>
+            <Grid xs={12} sm={6}>
+              <Typography variant="h6">
+                <AccessTime /> Check-out:
+              </Typography>
+              <Typography>
+                <Hotel /> Check-out by 11:30 a.m. at the latest.
+              </Typography>
+              <Typography>
+                <RoomService /> Request for late check-out at the reception.
+              </Typography>
+              <Typography>
+                <LocalShipping /> Luggage storage is available after check-out.
+              </Typography>
+            </Grid>
+          </Grid>
+          <br />
+          <br />
+
           {AllRooms.map((room, index) => (
             <RoomGrid
               key={index}
@@ -113,7 +172,7 @@ const index = () => {
               open={handleOpen}
             />
           ))}
-        </Grid>
+        </>
       ) : (
         <Grid
           sx={{
