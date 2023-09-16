@@ -9,46 +9,34 @@ import CloseIcon from "@mui/icons-material/Close";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
 import LazyLoad from "react-lazyload";
-import img from "../../assets/mm.jpg";
+import aw1 from "../../assets/pics/aw1.jpg";
+import aw2 from "../../assets/pics/aw2.jpg";
+import aw3 from "../../assets/pics/aw3.jpg";
+import aw4 from "../../assets/pics/aw4.jpg";
+import aw5 from "../../assets/pics/aw5.jpg";
+import aw6 from "../../assets/pics/aw6.jpg";
+import aw7 from "../../assets/pics/aw7.jpg";
+import aw8 from "../../assets/pics/aw8.jpg";
+import aw9 from "../../assets/pics/aw9.jpg";
+import aw10 from "../../assets/pics/aw10.jpg";
+import aw11 from "../../assets/pics/aw11.jpg";
+import aw12 from "../../assets/pics/aw12.jpg";
+import aw13 from "../../assets/pics/aw13.jpg";
 
 const images = [
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
-  img,
+  aw1,
+  aw2,
+  aw3,
+  aw4,
+  aw5,
+  aw6,
+  aw7,
+  aw8,
+  aw9,
+  aw10,
+  aw11,
+  aw12,
+  aw13,
 ];
 
 const index = () => {

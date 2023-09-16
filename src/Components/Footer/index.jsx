@@ -32,14 +32,14 @@ export default function Footer() {
         <Grid container spacing={5}>
           <Grid item xs={12} sm={4}>
             <Link to="/about" style={{ textDecoration: "none" }}>
-            <Typography
-              variant="h6"
-              color="text.primary"
-              gutterBottom
-              sx={{ color: "#fff", fontWeight: "bold" }}
-            >
-              About Us
-            </Typography>
+              <Typography
+                variant="h6"
+                color="text.primary"
+                gutterBottom
+                sx={{ color: "#fff", fontWeight: "bold" }}
+              >
+                About Us
+              </Typography>
             </Link>
             <Typography
               variant="body2"
@@ -54,14 +54,14 @@ export default function Footer() {
           </Grid>
           <Grid item xs={12} sm={4}>
             <Link to="/contact" style={{ textDecoration: "none" }}>
-            <Typography
-              variant="h6"
-              color="text.primary"
-              gutterBottom
-              sx={{ color: "#fff", fontWeight: "bold" }}
-            >
-              Contact Us
-            </Typography>
+              <Typography
+                variant="h6"
+                color="text.primary"
+                gutterBottom
+                sx={{ color: "#fff", fontWeight: "bold" }}
+              >
+                Contact Us
+              </Typography>
             </Link>
             <Typography
               variant="body2"
@@ -95,24 +95,24 @@ export default function Footer() {
               Follow Us
             </Typography>
             <Link href="https://www.facebook.com/" color="inherit">
-            <Facebook sx={{ color: "#fff" }} />
+              <Facebook sx={{ color: "#fff" }} />
             </Link>
             <Link
               href="https://www.instagram.com/"
               color="inherit"
               sx={{ pl: 1, pr: 1 }}
             >
-            <Instagram sx={{ color: "#fff" }} />
+              <Instagram sx={{ color: "#fff" }} />
             </Link>
             <Link href="https://www.twitter.com/" color="inherit">
-            <Twitter sx={{ color: "#fff" }} />
+              <Twitter sx={{ color: "#fff" }} />
             </Link>
             <Link
               href="https://www.tiktok.com/"
               color="inherit"
               sx={{ pl: 1, pr: 1 }}
             >
-            <TikTokIcon />
+              <TikTokIcon />
             </Link>
           </Grid>
         </Grid>
@@ -132,10 +132,66 @@ export default function Footer() {
                 color: "#FFEE49",
               }}
             >
-            MM Hotel
+              MM Hotel
             </Link>{" "}
             {new Date().getFullYear()}
             {"."}
+          </Typography>
+        </Box>
+        <Box mt={2}>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            align="center"
+            sx={{ color: "#fff" }}
+          >
+            {"Developed by - "}
+            <a
+              href="https://www.linkedin.com/in/dawit-sishu-309ab1241/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
+                fontWeight: "bold",
+                color: "#FFEE49",
+              }}
+            >
+              Dawit
+            </a>
+            {" , "}
+          </Typography>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            align="center"
+            sx={{ color: "#fff" }}
+          >
+            {"Photography - "}
+            <a
+              href="https://www.linkedin.com/in/fares-yigeremu-39ab87271/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
+                fontWeight: "bold",
+                color: "#FFEE49",
+              }}
+            >
+              Fares
+            </a>
+            {" & "}
+            <a
+              href="https://www.linkedin.com/in/efrata-tamirat-967a1624b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
+                fontWeight: "bold",
+                color: "#FFEE49",
+              }}
+            >
+              Efrata
+            </a>
           </Typography>
         </Box>
       </Container>
