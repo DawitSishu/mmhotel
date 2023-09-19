@@ -8,7 +8,7 @@ import {
 } from "@mui/icons-material";
 import "./style.css";
 
-import poster from "../../assets/pics/st3.jpg";
+import poster from "../../assets/pics/eb4.jpg";
 import vid from "../../assets/promo.mp4";
 
 import mainImg from "../../assets/pics/main.jpg";
@@ -96,19 +96,19 @@ function index() {
             }}
             className="about-content-text"
           >
-            <Typography variant="h3" align="center" color="primary">
+            <Typography variant="h3" align="center" color="#FF00FF" >
               MM Hotel
             </Typography>
             <Typography variant="body1" align="center">
-              Welcome to our hotel, your gateway to Dire Dawa. We are committed
-              to providing a seamless and enriching stay that sets the stage for
-              your adventures in this vibrant city. Our well-appointed rooms
-              offer a comfortable retreat, and our central location provides
-              convenient access to popular attractions. Relax and recharge in
-              our inviting communal spaces, and let us be your guide to the
-              captivating culture and experiences Dire Dawa has to offer. Come
-              and stay with us for a memorable journey that will leave you
-              wanting more.
+              Located just 10 minutes from Dire Dawa Airport, our hotel serves
+              as your gateway to this vibrant city. We are dedicated to ensuring
+              your stay is seamless and enriching, setting the stage for your
+              adventures. Our well-appointed rooms offer a comfortable retreat,
+              while our central location provides convenient access to popular
+              attractions. Relax and recharge in our inviting communal spaces as
+              we guide you through the captivating culture and experiences Dire
+              Dawa has to offer. Join us for a memorable journey that will leave
+              you with cherished memories.
             </Typography>
           </Grid>
         </Grid>
@@ -123,7 +123,8 @@ function index() {
             <img src={poster} alt="Play Video" className="poster-image" />
             <div className="play-button-overlay" onClick={handleOpenPopup}>
               <PlayArrowIcon
-                sx={{ fontSize: "80px" }}
+                sx={{ fontSize: "100px", color:"#FF00FF" }}
+                
                 className="play-button-icon"
               />
             </div>

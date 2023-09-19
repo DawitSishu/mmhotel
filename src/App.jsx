@@ -29,7 +29,7 @@ const lightTheme = createTheme({
       default: "#394757",
     },
     text: {
-      primary: '#ffffff', // Set the default text color to white
+      primary: "#ffffff",
     },
   },
   breakpoints: {
