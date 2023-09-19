@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
-import mainImg from "../../assets/pics/main.jpg";
-import about from "../../assets/pics/about2.jpg";
-import room from "../../assets/pics/p1.jpg";
+import mainImg from "../../assets/pics/newmain.jpg";
+import srv from "../../assets/pics/eb6.jpg";
+import about from "../../assets/pics/st3.jpg";
+import room from "../../assets/pics/vip1.jpg";
 import g1 from "../../assets/pics/bar.jpg";
 import g2 from "../../assets/pics/mor.jpg";
 import g3 from "../../assets/pics/p3.jpg";
@@ -11,7 +12,10 @@ import { Grid, Typography, Divider, Box, Button } from "@mui/material";
 import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import "./style.css";
 import { IoIosArrowForward } from "react-icons/io";
-import { FaDumbbell, FaGlassMartini, FaHotTub, FaWifi } from "react-icons/fa";
+import { BiRestaurant } from "react-icons/bi";
+import { MdRoomService,MdLocalLaundryService } from "react-icons/md";
+// MdRoomService
+import { FaDumbbell, FaGlassMartini, FaHotTub, FaWifi,FaUsers } from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
@@ -27,6 +31,10 @@ import ts7 from "../../assets/pics/ts7.jpg";
 const clients = [ts, ts2, ts3, ts4, ts5, ts6, ts7];
 
 const facilities = [
+  { name: "Restaurant", icon: <BiRestaurant size={33} /> },
+  { name: "Room Service", icon: <MdRoomService size={33} /> },
+  { name: "Laundary", icon: <MdLocalLaundryService size={33} /> },
+  { name: "Meeting", icon: <FaUsers size={33} /> },
   { name: "Gym", icon: <FaDumbbell size={33} /> },
   { name: "Massage", icon: <TbMassage size={33} /> },
   { name: "Steam", icon: <FaHotTub size={33} /> },
@@ -93,21 +101,16 @@ const index = () => {
         </svg>
       </Grid>
       <Grid pl={10} pr={10} pb={3}>
-        <Typography
-          variant="h4"
-          color="primary"
-          align="center"
-          sx={{ fontWeight: "bold" }}
-        >
-          WELCOME
+        <Typography variant="h4" align="center" sx={{ fontWeight: "bold" }}>
+          WELCOME TO OUR HOTEL
         </Typography>
         <Typography variant="body2" align="center">
-          <FaStar color="#FFEE49" /> Nestled in the heart of the city's vibrant
+          <FaStar color="#FF00FF" /> Nestled in the heart of the city's vibrant
           pulse, MM Hotel offers a prime location just moments away from the
           bustling bus station. Immerse yourself in the dynamic energy of Dire
           Dawa as you embark on effortless journeys to iconic landmarks,
           cultural hotspots, and hidden gems, all conveniently accessible from
-          our doorstep. <FaStar color="#FFEE49" />
+          our doorstep. <FaStar color="#FF00FF" />
         </Typography>
         <Divider
           sx={{
@@ -115,11 +118,32 @@ const index = () => {
             width: "30%",
             height: "2px",
             margin: "20px auto",
-            backgroundColor: "#FFEE49",
+            // backgroundColor: "#FF00FF",
+            backgroundColor: "#FFF",
           }}
         />
       </Grid>
       <Grid container spacing={2} pl={2} pr={2} mb={4}>
+        <Grid item xs={12} sm={4}>
+          <div className="grid-item">
+            <img src={about} alt="Background" className="background-image" />
+            <div className="overlay" />
+            <div className="content">
+              <Typography variant="h5">About Us</Typography>
+              <br />
+              <Link to="/about">
+                <Button
+                  variant="outlined"
+                  sx={{ color: "white", borderColor: "white" }}
+                >
+                  continue
+                  <span style={{ marginLeft: "5px" }} />
+                  <IoIosArrowForward color="white" />
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </Grid>
         <Grid item xs={12} sm={4}>
           <div className="grid-item">
             <img src={room} alt="Background" className="background-image" />
@@ -142,32 +166,12 @@ const index = () => {
         </Grid>
         <Grid item xs={12} sm={4}>
           <div className="grid-item">
-            <img src={mainImg} alt="Background" className="background-image" />
+            <img src={srv} alt="Background" className="background-image" />
             <div className="overlay" />
             <div className="content">
-              <Typography variant="h5">Awards</Typography>
+              <Typography variant="h5">Services</Typography>
               <br />
-              <Link to="/honors">
-                <Button
-                  variant="outlined"
-                  sx={{ color: "white", borderColor: "white" }}
-                >
-                  continue
-                  <span style={{ marginLeft: "5px" }} />
-                  <IoIosArrowForward color="white" />
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </Grid>
-        <Grid item xs={12} sm={4}>
-          <div className="grid-item">
-            <img src={about} alt="Background" className="background-image" />
-            <div className="overlay" />
-            <div className="content">
-              <Typography variant="h5">About Us</Typography>
-              <br />
-              <Link to="/about">
+              <Link to="/services">
                 <Button
                   variant="outlined"
                   sx={{ color: "white", borderColor: "white" }}
@@ -184,7 +188,7 @@ const index = () => {
       <Box>
         <Grid container justifyContent="center" spacing={2} mb={3}>
           <Grid item xs={12}>
-            <Typography variant="h3" align="center" color="primary">
+            <Typography variant="h3" align="center">
               Our Facilities
             </Typography>
           </Grid>
@@ -226,7 +230,7 @@ const index = () => {
       </Box>
       <Grid container spacing={2} pl={2} pr={2} mb={4} mt={2}>
         <Grid item xs={12}>
-          <Typography variant="h3" align="center" color="primary">
+          <Typography variant="h3" align="center">
             Refined Image Gallery
           </Typography>
         </Grid>
@@ -257,7 +261,7 @@ const index = () => {
       <Box>
         <Grid container justifyContent="center" spacing={2} mb={3}>
           <Grid item xs={12}>
-            <Typography variant="h3" align="center" color="primary">
+            <Typography variant="h3" align="center">
               Trusted Partnerships
             </Typography>
           </Grid>
@@ -307,7 +311,7 @@ const index = () => {
       </ResponsiveMasonry>
       <Grid container spacing={2} pl={2} pr={2} mt={2}>
         <Grid item xs={12}>
-          <Typography variant="h3" align="center" color="primary">
+          <Typography variant="h3" align="center" >
             We Invite You to Experience Our World-Class Amenities
           </Typography>
           <Box

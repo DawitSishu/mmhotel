@@ -20,6 +20,11 @@ import tw1 from "../../assets/pics/tw1.jpg";
 import tw2 from "../../assets/pics/tw2.jpg";
 import tw3 from "../../assets/pics/tw3.jpg";
 import tw4 from "../../assets/pics/tw4.jpg";
+import vip1 from "../../assets/pics/vip1.jpg";
+import vip2 from "../../assets/pics/vip2.jpg";
+import vip3 from "../../assets/pics/vip3.jpg";
+import vip4 from "../../assets/pics/vip4.jpg";
+import vip5 from "../../assets/pics/vip5.jpg";
 
 export const AllRooms = [
   {
@@ -44,11 +49,11 @@ export const AllRooms = [
     ],
   },
   {
-    image: sute1,
+    image: vip1,
     description:
       "Experience unparalleled comfort and style in our VIP Suite. This meticulously designed room offers a harmonious blend of elegance and functionality, ensuring an unforgettable stay. Relax in the inviting seating area or indulge in a restful night's sleep in the luxurious bedroom. Enjoy modern amenities, a well-equipped work desk, and high-speed internet access. Our dedicated concierge and private dining options cater to your every need. Discover the epitome of luxury and convenience in our VIP Suite.",
-    images: [sute1, sute2, sute3, sute4],
-    title: "Suite",
+    images: [vip1, vip2, vip3, vip4, vip5],
+    title: "Vip Suite",
     features: [
       "24 hour room service",
       "Comfortable beds and pillows",
