@@ -32,6 +32,9 @@ const lightTheme = createTheme({
       primary: "#ffffff",
     },
   },
+  typography :{
+    fontFamily : 'Playfair Display'
+  },
   breakpoints: {
     values: {
       xs: 0,
