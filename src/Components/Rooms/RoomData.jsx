@@ -28,7 +28,7 @@ import vip5 from "../../assets/pics/vip5.jpg";
 
 export const AllRooms = [
   {
-    image: p1,
+    image: p6,
     description:
       "Indulge in the ultimate luxury and opulence in our Presidential Room. This exquisite suite offers a lavish and spacious living space, meticulously designed with sophisticated decor and elegant furnishings. The room features a separate bedroom and a grand living area, providing ample space for relaxation and entertainment.njoy personalized services and exclusive amenities that cater to your every need, ensuring an unforgettable stay fit for royalty.",
     images: [p1, p2, p3, p4, p5, p6],

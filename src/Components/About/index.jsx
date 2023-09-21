@@ -61,57 +61,37 @@ function index() {
         </Grid>
       </Grid>
 
-      <Grid
-        container
-        spacing={2}
-        justifyContent="center"
-        sx={{ marginTop: "-10px" }}
-      >
-        <Grid
-          item
-          xs={12}
-          md={6}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-          className="logo"
-        >
-          <img
-            src={hotelmain}
-            alt="logp"
-            style={{ width: "75%", height: "80%" }}
-            loading="lazy"
-          />
-        </Grid>
-        <Grid item xs={12} md={6}>
-          <Grid
-            sx={{
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              flexDirection: "column",
-              padding: 5,
-            }}
-            className="about-content-text"
-          >
-            <Typography variant="h3" align="center" color="#FF00FF" >
-              MM Hotel
-            </Typography>
-            <Typography variant="body1" align="center">
-              Located just 10 minutes from Dire Dawa Airport, our hotel serves
-              as your gateway to this vibrant city. We are dedicated to ensuring
-              your stay is seamless and enriching, setting the stage for your
-              adventures. Our well-appointed rooms offer a comfortable retreat,
-              while our central location provides convenient access to popular
-              attractions. Relax and recharge in our inviting communal spaces as
-              we guide you through the captivating culture and experiences Dire
-              Dawa has to offer. Join us for a memorable journey that will leave
-              you with cherished memories.
-            </Typography>
-          </Grid>
-        </Grid>
+      <Grid container spacing={2} justifyContent="center" p={4}>
+        <Typography variant="body1" align="center">
+          Welcome to MM Hotel, your gateway to the vibrant city of Dire Dawa,
+          just a 10-minute drive from Dire Dawa Airport. We are dedicated to
+          ensuring your stay is seamless and enriching, setting the stage for
+          your adventures in this captivating city. Our well-appointed rooms
+          offer a comfortable retreat, and our central location provides
+          convenient access to popular attractions. Whether you're here for
+          business or leisure, we invite you to relax and recharge in our
+          inviting communal spaces as we guide you through the captivating
+          culture and experiences Dire Dawa has to offer. Join us for a
+          memorable journey that will leave you with cherished memories. At MM
+          Hotel, we offer a range of 60 guest rooms, from luxurious Suites to
+          stylish and comfortable deluxe bedrooms, many of which offer
+          magnificent views of the Dire Dawa Mountains. Our prime location in
+          Sabian, just a short distance from the airport, makes MM Hotel Dire
+          Dawa an ideal choice for your stay. During your stay, you can enjoy
+          the convenience of our on-site bar and restaurant, where you can savor
+          delicious meals. We also provide free private parking on site for your
+          convenience. Stay connected with complimentary Wi-Fi available
+          throughout the property. Our guest rooms at MM Hotel are designed with
+          your comfort in mind, featuring air-conditioning, flat-screen TVs with
+          satellite channels, tea-making facilities, and Jacuzzis available in
+          our Suites. Each room comes with a private bathroom equipped with a
+          bath and shower, along with bathrobes and slippers for your comfort.
+          At MM Hotel Dire Dawa, we go the extra mile to enhance your stay with
+          a free shuttle service from the airport, a 24-hour front desk, and
+          meeting facilities. Additionally, our shared lounge provides a cozy
+          space for guests to relax and watch TV. We look forward to hosting you
+          and making your stay in Dire Dawa truly memorable.
+        </Typography>
       </Grid>
       <Typography variant="h3" align="center">
         Your <FaMapMarkerAlt color="#FF00FF" /> Gateway to{" "}
@@ -123,8 +103,7 @@ function index() {
             <img src={poster} alt="Play Video" className="poster-image" />
             <div className="play-button-overlay" onClick={handleOpenPopup}>
               <PlayArrowIcon
-                sx={{ fontSize: "100px", color:"#FF00FF" }}
-                
+                sx={{ fontSize: "100px", color: "#FF00FF" }}
                 className="play-button-icon"
               />
             </div>

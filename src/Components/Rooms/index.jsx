@@ -112,23 +112,6 @@ const index = () => {
               </Typography>
             </Grid>
           </Grid>
-          <Typography padding={3} align="center">
-            At MM Hotel, we have 60 guest rooms and that range from the
-            luxurious Suits to the fashionable style and comfort in deluxe
-            bedrooms, many with magnificent views of the Dire Dawa Mountains. MM
-            Hotel Dire Dawa is located in Sabian, short distance from the
-            airport, presents you with ideal location. Guests can enjoy the
-            on-site bar, and meals at the on-site restaurant. Free private
-            parking is available on site. MM Hotel features free Wi-Fi
-            throughout the property. Guest rooms at MM Hotel is air-conditioned
-            and equipped with a flat-screen TV with satellite channels,
-            tea-making facilities and Jacuzzi, available in Suit rooms. Each one
-            comes with a private bathroom fitted with bath and shower, and also
-            including bath robes and slippers. MM Hotel Dire Dawa offers a free
-            shuttle service from the airport, a 24-hour front desk and meeting
-            facilities. There is also a shared lounge where guests can relax and
-            watch TV.
-          </Typography>
           <Grid container justifyContent="center" sx={{ pl: 5, pr: 5 }}>
             <Grid xs={12} sm={6}>
               <Typography variant="h6">
