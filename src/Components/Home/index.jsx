@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
-import mainImg from "../../assets/pics/newmain.jpg";
+import mainImg from "../../assets/pics/poo.jpg";
 import srv from "../../assets/pics/eb6.jpg";
 import about from "../../assets/pics/st3.jpg";
 import room from "../../assets/pics/vip1.jpg";
@@ -14,7 +14,6 @@ import "./style.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { BiRestaurant } from "react-icons/bi";
 import { MdRoomService,MdLocalLaundryService } from "react-icons/md";
-// MdRoomService
 import { FaDumbbell, FaGlassMartini, FaHotTub, FaWifi,FaUsers } from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 import { Link } from "react-router-dom";

@@ -36,7 +36,6 @@ const images = [
   aw10,
   aw11,
   aw12,
-  aw13,
 ];
 
 const index = () => {
@@ -121,7 +120,7 @@ const index = () => {
         justifyContent="center"
       >
         <Grid item justifyContent="center" sx={{ margin: 5 }}>
-          <Typography align="center" variant="h2" color="primary">
+          <Typography align="center" variant="h2" color="#FF00FF">
             Explore Our Honors and Accolades
           </Typography>
           <Typography align="center" variant="body">
