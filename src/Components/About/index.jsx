@@ -62,19 +62,18 @@ function index() {
       </Grid>
 
       <Grid container spacing={2} justifyContent="center" p={4}>
+        <Typography
+          align="center"
+          variant="h5"
+          sx={{ fontWeight: "bold", textDecoration: "blink" }}
+        >
+          Welcome to MM Hotel, your gateway to the vibrant city of Dire Dawa
+        </Typography>
+        <br />
+        <br />
         <Typography variant="body1" align="center">
-          Welcome to MM Hotel, your gateway to the vibrant city of Dire Dawa,
-          just a 10-minute drive from Dire Dawa Airport. We are dedicated to
-          ensuring your stay is seamless and enriching, setting the stage for
-          your adventures in this captivating city. Our well-appointed rooms
-          offer a comfortable retreat, and our central location provides
-          convenient access to popular attractions. Whether you're here for
-          business or leisure, we invite you to relax and recharge in our
-          inviting communal spaces as we guide you through the captivating
-          culture and experiences Dire Dawa has to offer. Join us for a
-          memorable journey that will leave you with cherished memories. At MM
-          Hotel, we offer a range of 60 guest rooms, from luxurious Suites to
-          stylish and comfortable deluxe bedrooms, many of which offer
+          At MM Hotel, we offer a range of 60 guest rooms, from luxurious Suites
+          to stylish and comfortable deluxe bedrooms, many of which offer
           magnificent views of the Dire Dawa Mountains. Our prime location in
           Sabian, just a short distance from the airport, makes MM Hotel Dire
           Dawa an ideal choice for your stay. During your stay, you can enjoy
