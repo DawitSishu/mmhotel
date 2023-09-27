@@ -1,4 +1,3 @@
-import img from "../../assets/mm.jpg";
 import bar from "../../assets/pics/bar.jpg";
 import rest from "../../assets/pics/rest.jpg";
 import gym from "../../assets/pics/gym.jpg";
@@ -6,7 +5,7 @@ import steam from "../../assets/pics/steam.jpg";
 import meet from "../../assets/pics/meet.jpg";
 import teras from "../../assets/pics/teras.jpg";
 import recep from "../../assets/pics/recep.jpg";
-import mass from "../../assets/pics/mass.jpg";
+import bus from "../../assets/pics/shuttle.jpg";
 import mor from "../../assets/pics/mor.jpg";
 
 export const ServiceData = [
@@ -37,14 +36,9 @@ export const ServiceData = [
     imgUrl: steam,
   },
   {
-    title: "Moroccan Bath",
-    text: "Experience the ancient traditions of Morocco with our luxurious Moroccan bath ritual. Step into our private and serene bath area, where warm water and fragrant Moroccan soap await you. Let the gentle exfoliation and detoxification process rejuvenate your skin, leaving it soft, smooth, and radiant. The therapeutic benefits extend beyond the physical, as the steam and aromatic scents relax your mind and uplift your spirits. Indulge in this centuries-old bathing ritual and immerse yourself in the rich cultural heritage of Morocco.",
+    title: "Moroccan Bath and Massage",
+    text: "Experience the ultimate relaxation and rejuvenation with our combined Moroccan bath and massage service. Step into our serene bath area, where warm water, fragrant Moroccan soap, and gentle exfoliation await. Let the therapeutic benefits of the bath rejuvenate your skin, while our skilled therapists provide a tailored massage experience to release tension and restore balance. Surrender to the soothing music and let the healing power of touch transport you to a state of blissful serenity. Immerse yourself in this unique and revitalizing experience, where ancient traditions and the art of massage merge seamlessly.",
     imgUrl: mor,
-  },
-  {
-    title: "Massage",
-    text: "Indulge in the ultimate relaxation and rejuvenation with our professional massage services. Our skilled therapists are trained in a variety of techniques, from Swedish to deep tissue, to address your specific needs and preferences. Close your eyes and let the soothing music and aromatic scents transport you to a state of blissful serenity. Feel your stress melt away as expert hands work their magic, releasing tension from your muscles and restoring balance to your body and mind. Experience the healing power of touch and emerge feeling revitalized and renewed.",
-    imgUrl: mass,
   },
   {
     title: "Meeting Hall",
@@ -55,5 +49,10 @@ export const ServiceData = [
     title: "Terrace",
     text: "Welcome to our breathtaking terrace, where you can escape the hustle and bustle of everyday life and immerse yourself in an oasis of tranquility. Take in the panoramic views of the surrounding landscape while enjoying a refreshing drink or a delicious meal from our rooftop bar and restaurant. With comfortable seating areas and a serene ambiance, our terrace is the perfect spot to unwind, socialize, or simply enjoy a moment of solitude. Whether it's a romantic evening under the stars or a gathering with friends, our terrace offers an unforgettable experience.",
     imgUrl: teras,
+  },
+  {
+    title: "Free Shuttle service",
+    text: "Sit back, relax, and let us take care of your transportation needs with our convenient shuttle service. Whether you're arriving at the airport or exploring the city, our reliable shuttle will ensure a comfortable and hassle-free journey. Our professional drivers will navigate the roads while you enjoy the ride in our spacious and well-maintained vehicles. With our shuttle service, you can travel with ease, knowing that you'll reach your destination safely and on time. Experience the convenience and peace of mind that comes with our exceptional shuttle service.",
+    imgUrl: bus,
   },
 ];

@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
-import mainImg from "../../assets/pics/x.jpg";
+import mainImg from "../../assets/pics/z.jpg";
 import srv from "../../assets/pics/eb6.jpg";
-import about from "../../assets/pics/st3.jpg";
+import about from "../../assets/mm.jpg";
 import room from "../../assets/pics/vip1.jpg";
 import g1 from "../../assets/pics/bar.jpg";
 import g2 from "../../assets/pics/mor.jpg";

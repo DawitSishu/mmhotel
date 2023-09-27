@@ -32,8 +32,8 @@ function Navbar() {
         >
           <Toolbar>
             <IconButton
-              color="primary"
               aria-label="open drawer"
+              color="primary"
               edge="start"
               onClick={showSidebar}
               sx={{ mr: 2 }}

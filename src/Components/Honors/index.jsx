@@ -28,7 +28,6 @@ const images = [
   aw2,
   aw3,
   aw4,
-  aw5,
   aw6,
   aw7,
   aw8,
@@ -36,6 +35,7 @@ const images = [
   aw10,
   aw11,
   aw12,
+  aw5,
 ];
 
 const index = () => {
