@@ -33,10 +33,9 @@ function Navbar() {
           <Toolbar>
             <IconButton
               aria-label="open drawer"
-              color="primary"
               edge="start"
               onClick={showSidebar}
-              sx={{ mr: 2 }}
+              sx={{ mr: 2, color:"#FF00FF" }}
             >
               <MenuIcon sx={{ fontSize: "44px" }} />
             </IconButton>
@@ -59,9 +58,9 @@ function Navbar() {
             <List>
               <ListItem>
                 <IconButton onClick={showSidebar}>
-                  <AiIcons.AiOutlineClose color="#FFEE49" />
+                  <AiIcons.AiOutlineClose color="#FF00FF" />
                 </IconButton>
-                <Typography variant="h6" align="center" color="primary" ml={3}>
+                <Typography variant="h6" align="center" color="#FF00FF" ml={3}>
                   MM Hotel
                 </Typography>
               </ListItem>
