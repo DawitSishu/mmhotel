@@ -94,7 +94,7 @@ export default function Footer() {
             >
               Follow Us
             </Typography>
-            <Link href="https://www.facebook.com/" color="inherit">
+            <Link href="https://www.facebook.com/MMDIREDAWA" color="inherit">
               <Facebook sx={{ color: "#fff" }} />
             </Link>
             <Link
@@ -136,6 +136,54 @@ export default function Footer() {
             </Link>{" "}
             {new Date().getFullYear()}
             {"."}
+          </Typography>
+        </Box>
+        <Box mt={2}>
+          <Typography
+            variant="body2"
+            color="text.secondary"
+            align="center"
+            sx={{ color: "#fff" }}
+          >
+            {"Developement & Photography by - "}
+            <a
+              href="https://www.linkedin.com/in/dawit-sishu-309ab1241/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
+                fontWeight: "bold",
+                color: "gold",
+              }}
+            >
+              Dawit
+            </a>
+            {" , "}
+            <a
+              href="https://www.linkedin.com/in/fares-yigeremu-39ab87271/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
+                fontWeight: "bold",
+                color: "gold",
+              }}
+            >
+              Fares
+            </a>
+            {" & "}
+            <a
+              href="https://www.linkedin.com/in/efrata-tamirat-967a1624b/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                textDecoration: "none",
+                fontWeight: "bold",
+                color: "gold",
+              }}
+            >
+              Efrata
+            </a>
           </Typography>
         </Box>
       </Container>
