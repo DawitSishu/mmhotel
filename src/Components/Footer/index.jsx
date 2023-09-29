@@ -160,7 +160,7 @@ export default function Footer() {
             </a>
             {" , "}
             <a
-              href="https://www.linkedin.com/in/fares-yigeremu-39ab87271/"
+              href="https://www.linkedin.com/in/fares-y-39ab87271"
               target="_blank"
               rel="noopener noreferrer"
               style={{

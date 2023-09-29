@@ -128,7 +128,7 @@ const ContactForm = () => {
           </InputLabel>
           <OutlinedInput
             fullWidth={true}
-            placeholder="what do you want to say?"
+            placeholder="what is your reaquest?"
             id="Message"
             multiline
             rows={4}
