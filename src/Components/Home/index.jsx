@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar";
-import mainImg from "../../assets/pics/newmain.jpg";
+import mainImg from "../../assets/main.jpg";
 import srv from "../../assets/pics/eb6.jpg";
 import about from "../../assets/mm.jpg";
 import room from "../../assets/pics/vip1.jpg";
@@ -13,8 +13,14 @@ import { FaMapMarkerAlt, FaStar } from "react-icons/fa";
 import "./style.css";
 import { IoIosArrowForward } from "react-icons/io";
 import { BiRestaurant } from "react-icons/bi";
-import { MdRoomService,MdLocalLaundryService } from "react-icons/md";
-import { FaDumbbell, FaGlassMartini, FaHotTub, FaWifi,FaUsers } from "react-icons/fa";
+import { MdRoomService, MdLocalLaundryService } from "react-icons/md";
+import {
+  FaDumbbell,
+  FaGlassMartini,
+  FaHotTub,
+  FaWifi,
+  FaUsers,
+} from "react-icons/fa";
 import { TbMassage } from "react-icons/tb";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.png";
@@ -80,7 +86,7 @@ const index = () => {
           >
             MM Hotel
           </Typography>
-          <Typography variant="h3" align="center" sx={{ color: "white" }}>
+          <Typography variant="h3" align="center" sx={{ color: "#FF00FF" }}>
             Your <FaMapMarkerAlt color="#FF00FF" /> Gateway to{" "}
             <FaMapMarkerAlt color="#FF00FF" /> Dire Dawa
           </Typography>
@@ -310,7 +316,7 @@ const index = () => {
       </ResponsiveMasonry>
       <Grid container spacing={2} pl={2} pr={2} mt={2}>
         <Grid item xs={12}>
-          <Typography variant="h3" align="center" >
+          <Typography variant="h3" align="center">
             We Invite You to Experience Our World-Class Amenities
           </Typography>
           <Box
